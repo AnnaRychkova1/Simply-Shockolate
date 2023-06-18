@@ -46,6 +46,16 @@ body {
   color: var(--accent-color);
 }
 
+.subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+    
+}
+.subtitle-accent {
+  color: var(--text-light-color);
+}
+
 .section {}
 
 
@@ -104,9 +114,9 @@ body {
   |============================
 */
 
-.section {}
-
-.hero {}
+.hero {
+  background-color: var(--bg-dark-color);
+}
 
 .hero-title {
   font-weight: 500;
@@ -174,13 +184,6 @@ body {
 
 .benefits-img {}
 
-.benefits-subtitle {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
-  color: var(--text-light-color);
-}
-
 .benefits-text {
   line-height: 1.21;
   color: rgba(255, 255, 255, 0.7);
@@ -244,12 +247,6 @@ body {
 
 .made-img {}
 
-.made-subtitle {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.33;
-}
-
 .made-list {}
 
 .made-item {}
@@ -269,13 +266,6 @@ body {
 .reviews-item {}
 
 .reviews-img {}
-
-.reviews-subtitle {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.33;
-  text-align: center;
-}
 
 .reviews-text {
   text-align: center;
