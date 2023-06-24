@@ -19,6 +19,12 @@ body {
     background-color: var(--bg-body);
 }
 
+/**
+  |============================
+  | Reset
+  |============================
+*/
+
 *,
 *::before,
 *::after {
@@ -46,6 +52,7 @@ ol {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -62,7 +69,28 @@ img {
   cursor: pointer;
 }
 
+/**
+  |============================
+  | Common styles
+  |============================
+*/
+.container {
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .section-title {
+  text-align: center;
+  max-width: 411px;
+  margin: 0 auto;
+
   font-weight: 600;
   font-size: 24px;
   line-height: 1.17;
@@ -76,17 +104,15 @@ img {
 }
 
 .subtitle {
+  margin-bottom: 8px;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
-    
 }
 .subtitle-accent {
   color: var(--text-light-color);
 }
-
-.section {}
-
 
 /**
   |============================
@@ -94,11 +120,28 @@ img {
   |============================
 */
 
-.header {}
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
 
-.header-nav {}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 447px;
+  gap: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
@@ -111,7 +154,11 @@ img {
 
 .logo-img {}
 
-.header-list {}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 
 .header-item {}
 
@@ -119,9 +166,14 @@ img {
   font-weight: 500;
   line-height: 1.14;
   align-items: center;
+  letter-spacing: -0.28px;
 }
 
-.header-networks {}
+.header-networks {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
 
 .header-networks-item {}
 
@@ -145,9 +197,14 @@ img {
 
 .hero {
   background-color: var(--bg-dark-color);
+  padding-top: 381px;
+  padding-bottom: 40px;
+  margin-bottom: 72px;
 }
 
 .hero-title {
+  max-width: 484px;
+
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
@@ -156,6 +213,17 @@ img {
 }
 
 .hero-btn-buy {
+  display: inline-flex;
+  align-items: flex-start;
+  min-width: 144px;
+  min-height: 45px;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: none;
+  text-align: center;
+  margin-top: 32px;
+  margin-right: 14px;
+
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -170,22 +238,45 @@ img {
 }
 
 .hero-link {
+  display: inline-flex;
+  align-items: flex-start;
+  min-width: 183px;
+  min-height: 45px;
+  padding: 13px 39px;
+  border-radius: 100px;
+  border: 1px solid var(--text-light-color);
+  text-align: center;
+  margin-right: 585px;
+
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   color: var(--text-light-color);
+  background-color: transparent;
 }
 
 .hero-link:hover,
 .hero-link:focus {
   color: var(--accent-color);
   background-color: var(--bg-color);
+  border: 1px solid var(--accent-color);
 }
 
 .hero-btn-scroll {
+  display: inline-block;
+  align-self: center;
+  min-width: 130px;
+  min-height: 38px;
+  border: none;
+  border-radius: 10px;
+  gap: 14px;
+  flex-shrink: 0;
+  padding: 15px 69px 20px 16px;;
+
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.03em;
+  background-color: transparent;
   color: var(--text-light-color);
 }
 
@@ -193,6 +284,7 @@ img {
 .hero-btn-scroll:focus {
   color: var(--accent-color);
   background-color: var(--bg-color);
+  padding: 0;
 }
 
 /**
@@ -201,17 +293,25 @@ img {
   |============================
 */
 
-.section {}
-
 .benefits {
   background-color: var(--bg-dark-color);
 }
 
-.benefits-list {}
+.benefits-list {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
 
-.benefits-item {}
+.benefits-item {
+  width: 308px;
+}
 
-.benefits-img {}
+.benefits-img {
+  margin-bottom: 22px;
+}
 
 .benefits-text {
   line-height: 1.21;
@@ -224,35 +324,55 @@ img {
   |============================
 */
 
-.section {}
-
-.ingridients {}
+.ingridients {
+  padding-top: 100px;
+}
 
 .ingridients-text {
   text-align: center;
+  
+  max-width: 486px;
+  margin: auto;
+  margin-top: 28px;
+  margin-bottom: 50px;
+
 }
 
-.ingridients-list {}
+.ingridients-list {
+  display: flex;
+  gap: 19px;
+}
 
 .ingridients-item {
   background-color: var(--bg-color);
+  flex-basis: calc((100% - 57px) / 4);
+  border-radius: 15px;
+  padding-top: 28px;
+  padding-right: 36px;
+  padding-bottom: 28px;
+  padding-left: 28px;
 }
 
 .ing-itm-1 {
   background-color: var(--accent-color);
 }
 
-.ing-itm-2 {}
+.ing-itm-2 {
+  border: 1px solid var(--accent-color);
+}
 
 .ing-itm-3 {
   background-color: var(--bg-dark-color);
 }
 
-.ing-itm-4 {}
+.ing-itm-4 {
+  border: 1px solid var(--accent-color);
+}
 
 .ingridients-img {}
 
 .ingridients-subtitle {
+  margin-top: 36px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
@@ -270,15 +390,37 @@ img {
   |============================
 */
 
-.section {}
-
 .made {}
+
+.made-content {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+}
 
 .made-img {}
 
-.made-list {}
+.made-description {
+  padding: 32px;
+}
 
-.made-item {}
+.made-subtitle {
+  max-width: 350px;
+  margin-bottom: 28px;
+}
+.made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.made-item {
+  margin-left: 16px;
+}
+
+.made-item:last-child {
+  margin-bottom: 0;
+}
 
 /**
   |============================
@@ -286,15 +428,54 @@ img {
   |============================
 */
 
-.section {}
+.reviews {
+  padding-bottom: 100px;
+}
 
-.reviews {}
+.reviews-list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 28px;
+}
 
-.reviews-list {}
+.reviews-item {
+  flex-basis: calc((100% - 56px) / 3);
+  height: 242px;
+  flex-shrink: 0;
+}
 
-.reviews-item {}
+.review-person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  width: fit-content;
+  margin: 0 auto;
+  
+}
 
-.reviews-img {}
+.reviews-img {
+  
+}
+
+.reviews-subtitle {
+  text-align: center;
+}
+
+.review-describe {
+  
+  padding: 24px;
+  padding-top: 104px;
+  height: 200px;
+  flex-shrink: 0;
+
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.10);
+  background: #FFF;
+  box-shadow: 0px 9.049315452575684px 100px 0px rgba(17, 17, 17, 0.03);
+}
 
 .reviews-text {
   text-align: center;
@@ -302,6 +483,21 @@ img {
 }
 
 .reviews-btn {
+  display: block;
+  margin: 0 457px;
+  min-width: 222px;
+  min-height: 50px;
+  padding: 14px 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid var(--accent-color);
+
+
+  display: inline-flex;
+  padding: 12px 28px;
+  align-items: flex-start;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
@@ -320,17 +516,27 @@ img {
   |============================
 */
 
-.section {}
-
 .footer {
   background-color: var(--bg-dark-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  
 }
 
 .footer-text {
+  max-width: ;width: 300px;
   font-weight: 500;
-    font-size: 28px;
-    line-height: 1.21;
-    color: var(--text-light-color);
+  font-size: 28px;
+  line-height: 1.21;
+  color: var(--text-light-color);
 }
 
 .footer-span {
@@ -338,23 +544,44 @@ img {
 }
 
 .footer-address {
+  max-width: 164px;
   font-style: normal;
 }
 
 .footer-address-text {
+  margin-bottom: 14px;
   font-weight: 500;
-  text-align: center;
   color: var(--text-light-color);
+
 }
 
-.footer-address-list {}
+.footer-address-list {
+  margin-bottom: 50px;
+}
 
-.footer-address-item {}
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.footer-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.footer-address-item {
+  
+}
 
 .footer-address-link {
-  text-align: center;
+  
   color: var(--text-light-color);
 }
+
+
 
 .footer-list {}
 
