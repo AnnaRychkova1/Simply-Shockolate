@@ -442,7 +442,7 @@ img {
 
 .reviews-item {
   flex-basis: calc((100% - 56px) / 3);
-  height: 242px;
+  height: 240px;
   flex-shrink: 0;
 }
 
@@ -452,8 +452,9 @@ img {
   justify-content: center;
   align-items: center;
   gap: 18px;
+  height: 122px;
   width: fit-content;
-  margin: 0 auto;
+  margin: 0 auto -96px auto;
 }
 
 .reviews-img {}
