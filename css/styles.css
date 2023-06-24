@@ -408,6 +408,7 @@ img {
   max-width: 350px;
   margin-bottom: 28px;
 }
+
 .made-list {
   display: flex;
   flex-direction: column;
@@ -453,19 +454,15 @@ img {
   gap: 18px;
   width: fit-content;
   margin: 0 auto;
-  
 }
 
-.reviews-img {
-  
-}
+.reviews-img {}
 
 .reviews-subtitle {
   text-align: center;
 }
 
 .review-describe {
-  
   padding: 24px;
   padding-top: 104px;
   height: 200px;
@@ -483,20 +480,16 @@ img {
 }
 
 .reviews-btn {
-  display: block;
+  display: inline-block;
   margin: 0 457px;
   min-width: 222px;
   min-height: 50px;
-  padding: 14px 40px;
+  padding: 13px 39px;
   justify-content: center;
-  align-items: center;
+  background-color: var(--bg-body);
   border-radius: 100px;
   border: 1px solid var(--accent-color);
 
-
-  display: inline-flex;
-  padding: 12px 28px;
-  align-items: flex-start;
 
   font-weight: 600;
   font-size: 18px;
@@ -526,9 +519,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-  
 }
 
 .footer-text {
@@ -552,11 +543,16 @@ img {
   margin-bottom: 14px;
   font-weight: 500;
   color: var(--text-light-color);
-
 }
 
 .footer-address-list {
   margin-bottom: 50px;
+}
+
+.footer-address-item {}
+
+.footer-address-link {
+  color: var(--text-light-color);
 }
 
 .footer-navigation {
@@ -571,19 +567,6 @@ img {
   gap: 24px;
   align-items: center;
 }
-
-.footer-address-item {
-  
-}
-
-.footer-address-link {
-  
-  color: var(--text-light-color);
-}
-
-
-
-.footer-list {}
 
 .footer-item {}
 
